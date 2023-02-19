@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+
+  <main class="chart">
+    <section class="chart-top">
+      <div class="balance-info">
+        <p class="balance"> My balance
+        </p>
+        <h2 class="balance-sum">$921.48</h2>
+      </div>
+      <img src="./images/logo.svg" alt="">
+    </section>
+
+    <section class="chart-bottom">
+      <h3 class="chart-title"> Spending - Last 7 days</h3>
+
+      <canvas class="chart-expenses">
+
+      </canvas>
+
+      <div class="chart-summary">
+        <div class="balance-month">
+          <p class="month-info"> Total this month
+          </p>
+          <h2 class="month-sum"> $478.33</h2>
+        </div>
+        <div class="balance-procent">
+          <p class="procent"> +2.4%
+          </p>
+          <h2 class="procent-info"> from last month</h2>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+
+  <footer class="footer">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor </a><span
+      class="year"></span>.
+
+    Coded by <a href="#">MJ</a>.
+  </footer>
+</body>
+
+</html>

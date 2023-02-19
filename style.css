@@ -1,0 +1,139 @@
+:root {
+	/*  Primary */
+
+	--soft-red: hsl(10, 79%, 65%);
+	--cyan: hsl(186, 34%, 60%);
+
+	/* Neutral */
+
+	--dark-brown: hsl(25, 47%, 15%);
+	--medium-brown: hsl(28, 10%, 53%);
+	--cream: hsl(27, 66%, 92%);
+	--very-pale-orange: hsl(33, 100%, 98%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	font-size: 1.125rem;
+	background-color: var(--cream);
+	font-family: 'DM Sans', sans-serif;
+}
+
+.chart {
+	max-width: 33.75rem;
+	width: 90%;
+	margin: 0 2rem;
+}
+
+.chart-top {
+	margin-bottom: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--soft-red);
+	color: var(--very-pale-orange);
+}
+
+.chart-bottom {
+	background-color: var(--very-pale-orange);
+}
+
+.chart-top,
+.chart-bottom {
+	padding: 1.5rem;
+	border-radius: 1.25rem;
+}
+img {
+	width: 3.75rem;
+	height: 2.5rem;
+}
+.balance {
+	font-size: 0.9rem;
+	margin-bottom: 0.5rem;
+}
+
+.balance-sum,
+.chart-title {
+	font-size: 1.5rem;
+}
+
+.chart-title,
+.month-sum,
+.procent {
+	color: var(--dark-brown);
+}
+
+.chart-summary {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.month-info,
+.procent-info {
+	color: var(--medium-brown);
+	font-weight: 400;
+}
+.month-info,
+.procent-info,
+.procent {
+	font-size: 0.9rem;
+}
+.procent {
+	font-weight: 700;
+}
+.month-sum {
+	font-size: 1.875rem;
+}
+.chart-expenses {
+	cursor: pointer;
+	padding-bottom: 1.5rem;
+	margin: 1.5rem 0;
+	border-bottom: 2px solid var(--cream);
+}
+.balance-procent {
+	text-align: right;
+}
+a {
+	text-decoration: none;
+	color: var(--soft-red);
+	font-weight: 700;
+}
+footer {
+	margin: 1.5rem 0.5rem 0;
+	text-align: center;
+	font-size: 0.8rem;
+	word-wrap: break-word;
+}
+
+@media (min-width: 576px) {
+	img {
+		width: 4.625rem;
+		height: 3rem;
+	}
+	.balance {
+		font-size: 1.1rem;
+	}
+
+	.balance-sum,
+	.chart-title {
+		font-size: 2rem;
+	}
+	.month-info,
+	.procent-info,
+	.procent {
+		font-size: 1.125rem;
+	}
+	.month-sum {
+		font-size: 3rem;
+	}
+}
