@@ -1,6 +1,6 @@
 const year = document.querySelector('.year');
 const xmlhttp = new XMLHttpRequest();
-const url = 'http://127.0.0.1:5500/data.json';
+const url = 'https://raw.githubusercontent.com/Mooonika90/expenses-chart-component/main/data.json';
 xmlhttp.open('GET', url, true);
 xmlhttp.send();
 xmlhttp.onreadystatechange = function () {
